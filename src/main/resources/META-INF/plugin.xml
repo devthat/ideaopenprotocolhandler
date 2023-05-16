@@ -1,0 +1,27 @@
+<idea-plugin>
+    <id>ideaopenprotocolhandler</id>
+    <name>Open Protocol Handler</name>
+    <version>1.0</version>
+    <vendor email="jonathankoch@duck.com" url="https://github.com/devthat/ideaopenprotocolhandler">Jonathan Koch
+    </vendor>
+
+    <!-- 2023.1 or later -->
+    <idea-version since-build="231.8109.175"/>
+    <depends>com.intellij.modules.platform</depends>
+
+    <description><![CDATA[
+        Navigate to a particular file in your opened project from your shell.
+
+        Only works in macOS.
+    ]]></description>
+
+    <change-notes><![CDATA[
+        Initial release.
+    ]]></change-notes>
+
+    <application-components>
+        <component>
+            <implementation-class>ideaopenprotocolhandler.Handler</implementation-class>
+        </component>
+    </application-components>
+</idea-plugin>
